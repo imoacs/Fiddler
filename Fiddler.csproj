@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{023B6B11-2B07-4756-BD39-ABAE7AF2FF80}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Fiddler</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Fiddler</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.JScript">
+      <Name>Microsoft.JScript</Name>
+      <HintPath>Microsoft.JScript.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vsa">
+      <Name>Microsoft.Vsa</Name>
+      <HintPath>Microsoft.Vsa.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+      <HintPath>mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+      <HintPath>System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <HintPath>System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+      <HintPath>System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <HintPath>System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+      <HintPath>System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Compression">
+      <Name>Xceed.Compression</Name>
+      <HintPath>..\Xceed.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Compression.Formats">
+      <Name>Xceed.Compression.Formats</Name>
+      <HintPath>..\Xceed.Compression.Formats.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.FileSystem">
+      <Name>Xceed.FileSystem</Name>
+      <HintPath>..\Xceed.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Zip">
+      <Name>Xceed.Zip</Name>
+      <HintPath>..\Xceed.Zip.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\AboutConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fiddler\alerterDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\AutoResponder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\BasePipe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\BasicAnalysis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\BindUIColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\BoundColumnEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\CalculateReportHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\CertMaker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ClientChatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ClientPipe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\CodeDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\CONFIG.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ContextAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\DNSResolver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\doesSessionMatchCriteriaDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ExecuteHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\FiddlerApplication.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\FiddlerExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\FiddlerScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\FiddlerToolbar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\FiddlerTranscoders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\frmAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddler\frmAlert.Designer.cs">
+      <DependentUpon>frmAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fiddler\frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddler\frmPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddler\frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddler\frmTextWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddler\frmUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddler\frmViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddler\getColumnStringDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\getDecisionDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\getUpdateDecisionDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\HTTPHeaderItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\HTTPHeaderParseWarnings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\HTTPHeaders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\HTTPRequestHeaders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\HTTPResponseHeaders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\HTTPSClientHello.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\HTTPSServerHello.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\HTTPSTunnel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\IAutoTamper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\IAutoTamper2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\IAutoTamper3.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\IBaseInspector2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ICertificateProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\IFiddlerExtension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\IFiddlerPreferences.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\IHandleExecAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\Inspector2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\InspectorComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\Inspectors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\IRequestInspector2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\IResponseInspector2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ISessionExporter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ISessionImporter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ListViewItemComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\LogEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\Logger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\MenuExt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\NotificationEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\OverrideCertificatePolicyHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\Parser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\PeriodicWorker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\PipePool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\PipeReusePolicy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\PrefChangeEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\PreferenceBag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ProcessFilterCategories.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ProcessHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ProfferFormatAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ProgressCallbackEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\Proxy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ProxyBypassList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ProxyExecuteParams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\QuickExec.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fiddler\QuickLinkItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\QuickLinkMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\RASInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fiddler\RequestBuilder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fiddler\RequiredVersionAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ResponderRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\RulesAfterCompileHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\RulesBeforeCompileHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\RulesCompileFailedHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\RulesOption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\RulesString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\RulesStringValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ScriptEngineSite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ServerChatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ServerPipe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\Session.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\SessionColumns.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\SessionFlags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\SessionIcons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\SessionListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fiddler\SessionProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddler\SessionStateHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\SessionStates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\SessionTimers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\SimpleEventHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddler\StateChangeEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\ToolsAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\TranscoderTuple.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\trimSessionListDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\UIARRuleEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiddler\UIAutoResponder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fiddler\Updater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\updateUIDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\Utilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\VersionStruct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\WinHTTPAutoProxy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\WinHTTPNative.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\WinINETCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\WinINETConnectoid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\WinINETConnectoids.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\WinINETProxyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fiddler\Winsock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Fiddler\SplashScreen.Designer.cs" />
+    <Compile Include="_PrivateImplementationDetails_{DB82010D-2232-41AC-9231-EB11E3667F05}.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Fiddler\Fiddler.Common.App.ico" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSplash.Image.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IcoSplash.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash.Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Viewer.Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notifyIcon.Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sbpBreakpoints.Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sbpCapture.Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
